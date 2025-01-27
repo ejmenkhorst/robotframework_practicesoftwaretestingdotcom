@@ -23,3 +23,6 @@ You can add to the **settings.json** file the following line: **robot.python.exe
 
 ### PyCharm
 For PyCharm it is recommended to use the plugin 'Hyper RobotFramework Support'.
+
+## Webdriver installation
+To install all browsers automatically via PlayWright follow the official [installation instructions](https://docs.robotframework.org/docs/different_libraries/browser#installation-instructions)   
