@@ -45,12 +45,13 @@ For PyCharm it is recommended to use the plugin 'Hyper RobotFramework Support'.
 ### Coding style
 To maintain consistency in the codebase we use 2 plugins:
 - [Robotidy](https://robotidy.readthedocs.io/en/stable/index.html) is a tool for autoformatting Robot Framework code.
-- [Robocop](https://robocop.readthedocs.io/en/stable/) s a tool that performs static code analysis of Robot Framework code.
+- [Robocop](https://robocop.readthedocs.io/en/stable/) is a tool that performs static code analysis of Robot Framework code.
 
 #### Robotidy  
 According to the changes you applied you can run robotidy with a path as parameter:  
 ```robotidy tests```  
 ```robotidy resources```  
+
 #### Robocop
 ```robocop ```
 
