@@ -12,13 +12,16 @@ Portfolio project showing what can be done with the Robot Framework 7 and Python
 
 ## Project setup
 
-### Application Under Test
+### Software Under Test
 In this project we use the demo website [practicesoftwaretesting.com](https://practicesoftwaretesting.com).   
 
 ### Virtual environment
 We use a virtual environment setup for this project to make sure that this project runs in complete isolation of all other python versions and packages you might have installed.
 
 ### Folder structure
+
+#### Config
+This folder contains a [configuration file](./config/pyproject.toml) for the [Robotidy](#robotidy-) plugin.
 
 #### Resources
 This folder contains common used interactions and specific Page Objects for a proper locator strategy.
@@ -44,8 +47,10 @@ To maintain consistency in the codebase we use 2 plugins:
 - [Robotidy](https://robotidy.readthedocs.io/en/stable/index.html) is a tool for autoformatting Robot Framework code.
 - [Robocop](https://robocop.readthedocs.io/en/stable/) s a tool that performs static code analysis of Robot Framework code.
 
-#### RoboTidy
-```robotidy ```
+#### Robotidy  
+According to the changes you applied you can run robotidy with a path as parameter:  
+```robotidy tests```  
+```robotidy resources```  
 #### Robocop
 ```robocop ```
 
