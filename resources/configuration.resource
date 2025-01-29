@@ -1,4 +1,4 @@
 *** Variables ***
-${BROWSER}    chromium
+${BROWSER}    firefox
 ${HEADLESS}    false
 ${URL}    https://practicesoftwaretesting.com
