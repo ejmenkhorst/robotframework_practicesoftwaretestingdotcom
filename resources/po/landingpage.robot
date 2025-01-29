@@ -1,11 +1,10 @@
 *** Settings ***
-Documentation      This page object represents the landing page of the website
-Library            Browser
+Documentation       This page object represents the landing page of the website
 
-Resource    ../configuration.resource
-Resource    ../common.robot
+Library             Browser
+Resource            ../configuration.resource
+Resource            ../common.robot
 
-*** Variables ***
 
 *** Keywords ***
 Load landing page

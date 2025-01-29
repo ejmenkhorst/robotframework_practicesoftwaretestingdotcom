@@ -1,9 +1,9 @@
 *** Settings ***
 Resource    ../resources/contact-form.robot
-Library        Browser
+Library     Browser
+
 
 *** Test Cases ***
-
 Submit contact form with all required fields
     [Documentation]    Happy flow test sending a form with all required fields except uploading a file.
     [Tags]    regression-test

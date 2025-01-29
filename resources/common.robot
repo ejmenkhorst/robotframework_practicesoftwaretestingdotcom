@@ -1,8 +1,8 @@
 *** Settings ***
-Documentation      This object represents generic keywords used in multiple tests
-Library            Browser
+Documentation       This object represents generic keywords used in multiple tests
 
-*** Variables ***
+Library             Browser
+
 
 *** Keywords ***
 Load page
@@ -12,8 +12,7 @@ Load page
 Verify page loaded successfully
     [Arguments]    ${title html}
     Get Title    ==    ${title html}
-    
-Verify message is shown
-    [Arguments]    ${locator}    ${validation message} 
-    Get Text       ${locator}    ==     ${validation message}
 
+Verify message is shown
+    [Arguments]    ${locator}    ${validation message}
+    Get Text    ${locator}    ==    ${validation message}
