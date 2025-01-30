@@ -1,43 +1,50 @@
 *** Settings ***
-Documentation       This page object represents the contact page of the website
+Documentation       Page Object for the contact form page
 
 Library             Browser
 
 
 *** Variables ***
-${firstnameLocator}         id=first_name
-${lastnameLocator}          id=last_name
-${emailAddressLocator}      id=email
-${subjectLocator}           id=subject
-${messageLocator}           id=message
-${uploadDocumentLocator}    id=attachment
-${sendLocator}              text=Send
+${FIRSTNAMELOCATOR}         id=first_name
+${LASTNAMELOCATOR}          id=last_name
+${EMAILLOCATOR}             id=email
+${SUBJECTLOCATOR}           id=subject
+${MESSAGELOCATOR}           id=message
+${UPLOADDOCUMENTLOCATOR}    id=attachment
+${SENDLOCATOR}              text=Send
 
 
 *** Keywords ***
-Input firstname
+Input Firstname
+    [Documentation]    Write a value in the textfield firstname on the contact page
     [Arguments]    ${firstname}
-    Fill Text    ${firstnameLocator}    ${firstname}
+    Fill Text    ${FIRSTNAMELOCATOR}    ${firstname}
 
-Input lastname
+Input Lastname
+    [Documentation]    Write a value in the textfield lastname on the contact page
     [Arguments]    ${lastname}
-    Fill Text    ${lastnameLocator}    ${lastname}
+    Fill Text    ${LASTNAMELOCATOR}    ${lastname}
 
-Input email address
+Input Email Address
+    [Documentation]    Write a value in the textfield email on the contact page
     [Arguments]    ${email}
-    Fill Text    ${emailAddressLocator}    ${email}
+    Fill Text    ${EMAILLOCATOR}    ${email}
 
-Input subject
+Input Subject
+    [Documentation]    Click on a value in the dropdown list based upon the value on the contact page
     [Arguments]    ${value}
-    Select Options By    ${subjectLocator}    value    ${value}
+    Select Options By    ${SUBJECTLOCATOR}    value    ${value}
 
-Input message
+Input Message
+    [Documentation]    Write a value in the textfield message on the contact page
     [Arguments]    ${message}
-    Fill Text    ${messageLocator}    ${message}
+    Fill Text    ${MESSAGELOCATOR}    ${message}
 
-Input attachment
+Input Attachment
+    [Documentation]    Upload a file in the upload component on the contact page
     [Arguments]    ${path to file}
-    Upload File By Selector    ${uploadDocumentLocator}    ${path to file}
+    Upload File By Selector    ${UPLOADDOCUMENTLOCATOR}    ${path to file}
 
-Send contact form
-    Click    ${sendLocator}
+Send Contact Form
+    [Documentation]    Click on the send button on the contact page
+    Click    ${SENDLOCATOR}

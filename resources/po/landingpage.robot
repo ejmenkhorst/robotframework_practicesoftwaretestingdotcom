@@ -7,8 +7,10 @@ Resource            ../common.robot
 
 
 *** Keywords ***
-Load landing page
+Load Landing Page
+    [Documentation]    Load the page based upon the given URL
     Load Page    ${URL}
 
-Verify landing page loaded successfully
+Verify Landing Page Loaded Successfully
+    [Documentation]    Verify HTML title of the landing page
     Verify Page Loaded Successfully    Practice Software Testing - Toolshop - v5.0

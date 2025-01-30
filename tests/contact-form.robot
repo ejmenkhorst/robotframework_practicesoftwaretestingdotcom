@@ -1,28 +1,28 @@
 *** Settings ***
-Resource    ../resources/contact-form.robot
-Library     Browser
+Documentation       All contact form related testcases
+
+Resource            ../resources/contact-form.robot
+Library             Browser
 
 
 *** Test Cases ***
-Submit contact form with all required fields
+Submit Contact Form With All Required Fields
     [Documentation]    Happy flow test sending a form with all required fields except uploading a file.
-    [Tags]    regression-test
-    Given user has navigated to the contact form
-    And filled out all required fields
-    When user submits the form
-    Then the form is successfully submitted
+    [Tags]    'regression'
+    Given User Has Navigated To The Contact Form
+    And Filled Out All Required Fields
+    When User Submits The Form
+    Then The Form Is Successfully Submitted
 
-Submit contact form with all required fields and invalid attachment
-    [Tags]    regression-test
-    Given user has navigated to the contact form
-    And filled out all required fields
-    When user uploads a invalid filetype
-    Then a warning is displayed    Only files with the txt extension are allowed, and files must be 0kb.
+Submit Contact Form with all required fields and invalid attachment
+    Given User Has Navigated To The Contact Form
+    And Filled Out All Required Fields
+    When User Uploads A Invalid Filetype
+    Then A Warning Is Displayed    Only files with the txt extension are allowed, and files must be 0kb.
 
 Submit contact form with all required fields and valid attachment
-    [Tags]    wip
-    Given user has navigated to the contact form
-    And filled out all required fields
-    And user uploads a valid filetype
-    When user submits the form
-    Then the form is successfully submitted
+    Given User Has Navigated To The Contact Form
+    And Filled Out All Required Fields
+    And User Uploads A Valid Filetype
+    When User Submits The Form
+    Then The Form Is Successfully Submitted
