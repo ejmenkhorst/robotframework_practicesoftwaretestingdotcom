@@ -115,3 +115,6 @@ venv.bak/
 
 # PyPI configuration file
 .pypirc
+
+#Robot framework
+results
