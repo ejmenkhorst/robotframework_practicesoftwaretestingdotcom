@@ -1,6 +1,7 @@
 *** Settings ***
-Documentation       Login form BDD format
+Documentation       Login form steps BDD format
 
+Library             FakerLibrary    locale=nl_NL    seed=124
 Resource            po/login.resource
 Resource            common steps.resource
 Resource            configuration.resource
@@ -20,7 +21,8 @@ User Logs In With Valid Credentials
 
 User Logs In With Invalid Credentials
     [Documentation]    User Logs In With Invalid Credentials
-    Input Email Address    fakeuser@test.com
+    ${fake email}    FakerLibrary.Email
+    Input Email Address    ${fake email}
     Input Password    invalid-password
     Login To Portal
 
