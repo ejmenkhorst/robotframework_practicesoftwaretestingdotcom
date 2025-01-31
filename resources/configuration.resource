@@ -6,3 +6,5 @@ Documentation       Generic variables used in the whole project
 ${BROWSER}      firefox
 ${HEADLESS}     false
 ${URL}          https://practicesoftwaretesting.com
+${USERNAME}     customer@practicesoftwaretesting.com
+${PASSWORD}     welcome01
