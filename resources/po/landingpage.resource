@@ -3,7 +3,7 @@ Documentation       This page object represents the landing page of the website
 
 Library             Browser
 Resource            ../configuration.resource
-Resource            ../common.robot
+Resource            ../common steps.resource
 
 
 *** Keywords ***

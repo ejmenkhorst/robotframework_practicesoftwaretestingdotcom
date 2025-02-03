@@ -3,6 +3,7 @@ certifi==2024.12.14
 charset-normalizer==3.4.1
 click==8.1.8
 colorama==0.4.6
+Faker==35.2.0
 grpcio==1.68.1
 grpcio-tools==1.68.1
 h11==0.14.0
@@ -31,6 +32,7 @@ rich-click==1.8.5
 robotframework==7.2
 robotframework-assertion-engine==3.0.3
 robotframework-browser==19.1.2
+robotframework-faker==5.0.0
 robotframework-pythonlibcore==4.4.1
 robotframework-requests==0.9.7
 robotframework-robocop==5.8.1
