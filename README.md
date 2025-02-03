@@ -63,3 +63,13 @@ To run tests you can run commands via the terminal to execute a specific range o
 
 ### Run the whole testsuite
 ```robot -d results tests```
+
+### Run a specific testsuite
+```robot -d results tests/login.robot```
+
+### Run a specific browser for the whole suite
+
+#### Chromium
+```robot -v browser:chromium -d results tests```  
+#### Firefox
+```robot -v browser:firefox -d results tests```  
