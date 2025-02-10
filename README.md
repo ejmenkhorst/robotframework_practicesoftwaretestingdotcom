@@ -5,7 +5,7 @@ Portfolio project showing what can be done with the Robot Framework 7 and Python
  - [Project setup](#project-setup)
  - [Development tools](#development-tools)
  - [Webdriver installation](#webdriver-installation)
- - [Running tests](#running-tests)
+ - [Running tests](#running-tests-locally)
  
 ## Libraries used in this project
 - [Browser Library](https://marketsquare.github.io/robotframework-browser/Browser.html) Robot Frameworks implementation of the Playwright library.
@@ -13,7 +13,8 @@ Portfolio project showing what can be done with the Robot Framework 7 and Python
 ## Project setup
 
 ### Software Under Test
-In this project we use the demo website [practicesoftwaretesting.com](https://practicesoftwaretesting.com).   
+In this project we use the demo website [practicesoftwaretesting.com](https://practicesoftwaretesting.com).  
+To speed up the UI tests we also make use of the provided [Toolshop REST API](https://api.practicesoftwaretesting.com/api/documentation#/)
 
 ### Virtual environment
 We use a virtual environment setup for this project to make sure that this project runs in complete isolation of all other python versions and packages you might have installed.
@@ -58,9 +59,9 @@ According to the changes you applied you can run robotidy with a path as paramet
 ## Webdriver installation
 To install all browsers automatically via PlayWright follow the official [installation instructions](https://docs.robotframework.org/docs/different_libraries/browser#installation-instructions)   
 
-## Running tests
-To run tests you can run commands via the terminal to execute a specific range of tests.
-
+## Running tests locally
+To run tests you can run commands via the terminal to execute a specific range of tests.  
+Please make sure you run ```rfbrowser init``` to install the browsers before running a test.
 ### Run the whole testsuite
 ```robot -d results tests```
 
