@@ -1,9 +1,6 @@
 *** Settings ***
 Documentation       Checkout related steps in BDD format
 
-Library             Collections
-Library             RequestsLibrary
-Library             JSONLibrary
 Resource            po/cart.resource
 Resource            po/login.resource
 Resource            configuration.resource
