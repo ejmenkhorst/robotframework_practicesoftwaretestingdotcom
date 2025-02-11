@@ -54,6 +54,7 @@ According to the changes you applied you can run robotidy with a path as paramet
 ```robotidy resources```  
 
 #### Robocop
+The Robocop plugin is also automatically run via a Github Action when creating a pull request and will give feedback.
 ```robocop ```
 
 ## Webdriver installation
