@@ -17,7 +17,14 @@ In this project we use the demo website [practicesoftwaretesting.com](https://pr
 To speed up the UI tests we also make use of the provided [Toolshop REST API](https://api.practicesoftwaretesting.com/api/documentation#/)
 
 ### Virtual environment
-We use a virtual environment setup for this project to make sure that this project runs in complete isolation of all other python versions and packages you might have installed.
+We use a virtual environment setup for this project to make sure that this project runs in complete isolation of all other python versions and packages you might have installed.  
+
+#### Initialisation of the project
+1. Select Python interpreter a VENV is recommended
+2. Install all dependencies and browsers
+   - ```sudo apt install python3-pip```
+   - ```pip install -r requirements.txt```
+   - ```rfbrowser init```  
 
 ### Folder structure
 
@@ -54,7 +61,7 @@ According to the changes you applied you can run robotidy with a path as paramet
 ```robotidy resources```  
 
 #### Robocop
-The Robocop plugin is also automatically run via a Github Action when creating a pull request and will give feedback.
+The Robocop plugin is also automatically run via a Github Action when creating a pull request and will give feedback.  
 ```robocop ```
 
 ## Webdriver installation
