@@ -9,6 +9,14 @@ Portfolio project showing what can be done with the Robot Framework 7 and Python
  
 ## Libraries used in this project
 - [Browser Library](https://marketsquare.github.io/robotframework-browser/Browser.html) Robot Frameworks implementation of the Playwright library.
+- [Robot Framework Requests]() Robots framework implementation of the famous Python Requests Library
+
+### Look for packages to update
+To support an easy overview of packages and their latest state we make use of ***pip-check***.
+``` bash
+pip-check
+```
+This will give you a table like overview oof the packages current state versus the defined state in your requirements.txt file.
 
 ## Project setup
 
