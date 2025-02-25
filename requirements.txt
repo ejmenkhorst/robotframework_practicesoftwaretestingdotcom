@@ -3,9 +3,9 @@ certifi==2024.12.14
 charset-normalizer==3.4.1
 click==8.1.8
 colorama==0.4.6
-Faker==35.2.0
-grpcio==1.68.1
-grpcio-tools==1.68.1
+Faker==36.1.1
+grpcio==1.70.0
+grpcio-tools==1.70.0
 h11==0.14.0
 idna==3.10
 Jinja2==3.1.5
@@ -25,7 +25,7 @@ pip-check==2.9
 pip3-autoremove==1.2.2
 platformdirs==4.3.6
 ply==3.11
-protobuf==5.29.2
+protobuf==5.29.3
 Pygments==2.19.1
 PySocks==1.7.1
 python-dateutil==2.9.0.post0
@@ -35,9 +35,9 @@ referencing==0.36.2
 requests==2.32.3
 rich==13.9.4
 rich-click==1.8.5
-robotframework==7.2
+robotframework==7.2.2
 robotframework-assertion-engine==3.0.3
-robotframework-browser==19.1.2
+robotframework-browser==19.3.1
 robotframework-faker==5.0.0
 robotframework-jsonlibrary==0.5
 robotframework-pythonlibcore==4.4.1
@@ -56,6 +56,7 @@ tomli_w==1.1.0
 trio==0.28.0
 trio-websocket==0.11.1
 typing_extensions==4.12.2
+tzdata==2025.1
 urllib3==2.3.0
 webdriver-manager==4.0.2
 websocket-client==1.8.0
