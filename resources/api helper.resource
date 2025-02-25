@@ -6,8 +6,10 @@ Library             Collections
 Library             RequestsLibrary
 Library             JSONLibrary
 
+
 *** Variables ***
-&{header}    Content-Type=application/json    accept=application/json
+&{header}       Content-Type=application/json    accept=application/json
+
 
 *** Keywords ***
 Get Product ID
