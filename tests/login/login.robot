@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation       All login related testcases
 
-Resource            ../resources/login form steps.resource
+Resource            ../../resources/login form steps.resource
 
 
 *** Test Cases ***

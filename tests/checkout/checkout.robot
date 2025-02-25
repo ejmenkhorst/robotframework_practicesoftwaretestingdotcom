@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation       All checkout related testcases
 
-Resource            ../resources/checkout steps.resource
+Resource            ../../resources/checkout steps.resource
 
 
 *** Test Cases ***

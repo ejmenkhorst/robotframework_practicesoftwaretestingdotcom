@@ -9,7 +9,7 @@ Portfolio project showing what can be done with the Robot Framework 7 and Python
  
 ## Libraries used in this project
 - [Browser Library](https://marketsquare.github.io/robotframework-browser/Browser.html) Robot Frameworks implementation of the Playwright library.
-- [Robot Framework Requests]() Robots framework implementation of the famous Python Requests Library
+- [Robot Framework Requests](https://marketsquare.github.io/robotframework-requests/doc/RequestsLibrary.html) Robots framework implementation of the famous Python Requests Library
 
 ### Look for packages to update
 To support an easy overview of packages and their latest state we make use of ***pip-check***.
@@ -43,7 +43,7 @@ This folder contains a [configuration file](./config/pyproject.toml) for the [Ro
 This folder contains common used interactions and specific Page Objects for a proper locator strategy.
 
 #### Results
-The result folder contains the tests once they are done running
+The result folder contains the test results in different formats once they are done running.
 
 #### Tests
 The test folder contains the actual tests which can be executed.
@@ -81,12 +81,21 @@ Please make sure you run ```rfbrowser init``` to install the browsers before run
 ### Run the whole testsuite
 ```robot -d results tests```
 
-### Run a specific testsuite
-```robot -d results tests/login.robot```
+### Run a specific testsuite  
+Settings for each testsuite are loaded from __init__.robot within each specific directory.
+```bash 
+robot -d results tests/login/
+```  
+```bash 
+robot -d results tests/checkout/
+```  
+```bash 
+robot -d results tests/contactform/
+```
 
-### Run a specific browser for the whole suite
+### Run a specific browser for the all test suites
 
 #### Chromium
 ```robot -v browser:chromium -d results tests```  
 #### Firefox
-```robot -v browser:firefox -d results tests```  
+```robot -v browser:firefox -d results tests```
