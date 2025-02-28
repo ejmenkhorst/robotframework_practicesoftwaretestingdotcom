@@ -25,6 +25,7 @@ Retrieve And Set Authentication Token
     [Documentation]    Get authentication token via API and set it in local storage of the browser
     ${generated auth token}    Get Authentication Token    username=${USERNAME}    password=${PASSWORD}
     Local Storage Set Item    auth-token    ${generated auth token}
+    Validate Local Storage    auth-token    ${generated auth token}
 
 Set Session Storage
     [Documentation]    Set session storage in browser
@@ -36,3 +37,9 @@ Validate Session Storage
     [Arguments]    ${key}    ${expected value}
     ${item}    Session Storage Get Item    ${key}
     Should Be Equal    ${item}    ${expected value}
+
+Validate Local Storage
+    [Documentation]    Validate local storage with the key and compare it with the expected value
+    [Arguments]    ${key}    ${expected value}
+    ${local storage item}    Local Storage Get Item    ${key}
+    Should Be Equal    ${local storage item}    ${expected value}
