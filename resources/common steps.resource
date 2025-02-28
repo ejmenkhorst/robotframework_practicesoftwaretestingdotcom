@@ -30,3 +30,9 @@ Set Session Storage
     [Documentation]    Set session storage in browser
     [Arguments]    ${key}    ${value}
     Session Storage Set Item    ${key}    ${value}
+
+Validate Session Storage
+    [Documentation]    Validate session storage with the key and compare it with the expected value
+    [Arguments]    ${key}    ${expected value}
+    ${item}    Session Storage Get Item    ${key}
+    Should Be Equal    ${item}    ${expected value}
