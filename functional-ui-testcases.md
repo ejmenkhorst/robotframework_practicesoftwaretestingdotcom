@@ -55,7 +55,9 @@ Then a warning is displayed
 ##### TC-003 Scenario: Successful checkout process
 
 ```gherkin
-Given the authenticated user is on the checkout page with items in the cart
+Given user is on the checkout page
+And user is logged in
+And there are items in the shopping cart
 And proceeds to checkout and enters valid shipping and payment information
 When the user places the order
 Then the user should be redirected to the order confirmation page
@@ -76,7 +78,9 @@ Then a login screen is shown
 [Documentation]
 
 ```gherkin
-Given the authenticated user is on the checkout page with items in the cart
+Given user is on the checkout page
+And user is logged in
+And there are items in the shopping cart
 When proceed to checkout
 Then informative message is displayed
 ```
