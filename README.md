@@ -1,5 +1,10 @@
 # robotframework-practicesoftwaretestingdotcom
-Portfolio project showing what can be done with the Robot Framework 7 and Python version 3.12.  
+Portfolio project showing what can be done with the Robot Framework 7 and Python version 3.12.
+
+- [Test automation strategy](./testautomation-strategy.md)
+- Latest status implemented [testcases](./functional-ui-testcases.md)  
+
+
  **Table of content:**
  - [Libraries](#libraries-used-in-this-project)
  - [Project setup](#project-setup)
@@ -16,7 +21,7 @@ To support an easy overview of packages and their latest state we make use of **
 ``` bash
 pip-check
 ```
-This will give you a table like overview oof the packages current state versus the defined state in your requirements.txt file.
+This will give you a table like overview of the packages current state versus the defined state in your requirements.txt file.
 
 ## Project setup
 
