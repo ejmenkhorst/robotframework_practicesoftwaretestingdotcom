@@ -32,7 +32,7 @@ A Login Screen Is Shown
     [Documentation]    Step 2 in the checkout process is shown - login screen
     Get Element By Role    HEADING    name=Login
 
-User Is Authenticated
+User Is Logged In
     [Documentation]    Get authentication token via API and set it in local storage of the browser
     Retrieve And Set Authentication Token
 
