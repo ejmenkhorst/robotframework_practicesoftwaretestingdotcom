@@ -26,7 +26,7 @@ User Submits The Form
 
 The Form Is Successfully Submitted
     [Documentation]    Verify if a message is show after successfully sending the form
-    Verify Message Is Shown    xpath=/html/body/app-root/div/app-contact/div/div/div/h3    Contact
+    Verify Message Is Shown    ${SUCCESSSUBMITLOCATOR}    Contact
 
 User Uploads A Invalid Filetype
     [Documentation]    Upload a invalid PDF filetype

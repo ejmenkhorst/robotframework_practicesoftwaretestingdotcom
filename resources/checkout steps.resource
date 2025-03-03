@@ -18,8 +18,10 @@ There Are Items In The Shopping Cart
     ${product id}    Get Product ID
     ${shoppingcart id}    Create Shopping Cart ID
     Add Items To Shopping Cart    cart id=${shoppingcart id}    product id=${product id}    quantity=1
-    SessionStorage Set Item    cart_id    ${shoppingcart id}
-    SessionStorage Set Item    cart_quantity    1
+    Set Session Storage    cart_id    ${shoppingcart id}
+    Validate Session Storage    cart_id    ${shoppingcart id}
+    Set Session Storage    cart_quantity    1
+    Validate Session Storage    cart_quantity    1
     Browser.Reload
 
 Proceed To Checkout
@@ -30,10 +32,9 @@ A Login Screen Is Shown
     [Documentation]    Step 2 in the checkout process is shown - login screen
     Get Element By Role    HEADING    name=Login
 
-User Is Authenticated
+User Is Logged In
     [Documentation]    Get authentication token via API and set it in local storage of the browser
-    ${generated auth token}    Get Authentication Token    username=${USERNAME}    password=${PASSWORD}
-    Local Storage Set Item    auth-token    ${generated auth token}
+    Retrieve And Set Authentication Token
 
 Informative Message Is Displayed
     [Documentation]    A informative message like argument

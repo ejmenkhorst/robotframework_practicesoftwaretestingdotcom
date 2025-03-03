@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation       All contact form related testcases
 
-Resource            ../resources/contact form steps.resource
+Resource            ../../resources/contact form steps.resource
 
 
 *** Test Cases ***

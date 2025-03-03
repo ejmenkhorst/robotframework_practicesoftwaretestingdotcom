@@ -12,6 +12,7 @@ ${SUBJECTLOCATOR}           id=subject
 ${MESSAGELOCATOR}           id=message
 ${UPLOADDOCUMENTLOCATOR}    id=attachment
 ${SENDLOCATOR}              text=Send
+${SUCCESSSUBMITLOCATOR}     xpath=/html/body/app-root/div/app-contact/div/div/div/h3
 
 
 *** Keywords ***
