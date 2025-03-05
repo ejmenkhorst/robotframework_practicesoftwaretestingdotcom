@@ -16,7 +16,7 @@ The automated tests described in this document can be integrated into a CI/CD pi
 2. [API Testing](#2-api-testing)
    - [Focus](#focus-api-testing)
    - [Scope](#scope-api-testing)
-   - [Prioritisation of the API Endpoints](#prioritisation-of-the-api-endpoints)
+   - [Prioritisation of the API Endpoints](#prioritisation-of-the-api-endpointshttpsapipracticesoftwaretestingcomapidocumentation)
      - [High Priority](#high-priority)
      - [Medium Priority](#medium-priority)
      - [Low Priority](#low-priority)
@@ -24,7 +24,7 @@ The automated tests described in this document can be integrated into a CI/CD pi
 3. [UI Testing](#3-ui-testing)
    - [Focus](#focus-ui-testing)
    - [Scope](#scope-ui-testing)
-   - [Prioritisation](#prio)
+   - [Prioritisation](#prioritisation)
      - [Very High Priority](#very-high-priority)
      - [High Priority](#high-priority-1)
      - [Medium Priority](#medium-priority)
@@ -164,7 +164,7 @@ The main focus for API testing is to ensure that the Toolshop API works as expec
 #### **Prioritisation**
 
 | **Feature**                 | **Priority** |
-| --------------------------- | ------------ |
+|-----------------------------|--------------|
 | Checkout Flow               | Very High    |
 | Login Process               | High         |
 | Customer Registration       | High         |
@@ -213,7 +213,7 @@ The main focus for API testing is to ensure that the Toolshop API works as expec
 
 #### **Result UI testing**:
 
-- Improved tests coverage by ensuring UI components with mocked integrations for dificult error states of an application
+- Improved tests coverage by ensuring UI components with mocked integrations for difficult error states of an application
 - Improved test coverage by ensuring UI Integration tests with real system integrations
 - Faster regression feedback on UI component tests for the team.
 
@@ -231,7 +231,7 @@ The main focus for API testing is to ensure that the Toolshop API works as expec
 #### **Prioritisation E2E**
 
 | **User Journey**                                                               | **Description**                                                                                               | **Priority** |
-| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------- | ------------ |
+|--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|--------------|
 | **Checkout Flow (with Registration/Login)**                                    | Includes user registration, login, product browsing, adding to the cart, and completing the checkout process. | Very High    |
 | **Login → Shopping Cart → Checkout → Order Confirmation**                      | For returning users, tests login, shopping cart management, and order completion.                             | High         |
 | **User Registration → Password Reset → Login → Checkout → Order Confirmation** | Tests account recovery and allows users to complete the purchase process after resetting their password.      | High         |
