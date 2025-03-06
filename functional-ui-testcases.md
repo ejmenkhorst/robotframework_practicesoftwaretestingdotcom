@@ -46,11 +46,11 @@ Then a warning is displayed
 > The users ability to complete the purchase is vital to survive as an online toolshop.  
 > If they can't complete the checkout, the sale is lost.
 
-| Test Case ID | Scenario                                                     | Description                                                                                           | Status          |
-|--------------|--------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|-----------------|
-| TC-003       | Successful checkout process                                  | Verify successful checkout process including payment by supplying valid shipping and payment details. | Not Implemented |
-| TC-004       | User should not be able to proceed checkout if not logged in | Check if user gets login screen when trying to checkout without being authenticated                   | Implemented     |
-| TC-005       | User should not get login screen if authenticated            | Check if user does not get a login screen when trying to checkout while being authenticated           | Implemented     |
+| Test Case ID | Scenario                                                     | Description                                                                                           | Status      |
+|--------------|--------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------|
+| TC-003       | Successful checkout process                                  | Verify successful checkout process including payment by supplying valid shipping and payment details. | Implemented |
+| TC-004       | User should not be able to proceed checkout if not logged in | Check if user gets login screen when trying to checkout without being authenticated                   | Implemented |
+| TC-005       | User should not get login screen if authenticated            | Check if user does not get a login screen when trying to checkout while being authenticated           | Implemented |
 
 ##### TC-003 Scenario: Successful checkout process
 
@@ -59,9 +59,9 @@ Given user is on the checkout page
 And user is logged in
 And there are items in the shopping cart
 And proceeds to checkout and enters valid shipping and payment information
-When the user places the order
-Then the user should be redirected to the order confirmation page
-And the payment should be processed successfully
+When the user pays the order
+Then the user should be notified with a successful payment notification
+And the user should be notified with a successful order notification
 ```
 
 ##### TC-004 Scenario: User should not be able to proceed checkout if not logged in

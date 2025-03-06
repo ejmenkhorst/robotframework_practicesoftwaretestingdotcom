@@ -7,11 +7,9 @@ Library             Browser
 *** Variables ***
 # Step 1 Cart
 ${PROCEEDTOCHECKOUTLOCATOR}     data-test=proceed-1
-# Step 2 Sign In
-${ALREADYLOGGEDINLOCATOR}       xpath=//div/app-checkout/aw-wizard/div/aw-wizard-step[2]/app-login/div/div/div/p
 
 
 *** Keywords ***
-Proceed To Checkout Step 2
+Proceed To Checkout Step Login
     [Documentation]    Click on the Proceed To Checkout button on the checkout page
     Click    ${PROCEEDTOCHECKOUTLOCATOR}
