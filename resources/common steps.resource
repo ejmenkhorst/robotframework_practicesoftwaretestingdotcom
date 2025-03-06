@@ -17,9 +17,9 @@ Verify Page Loaded Successfully
     Get Title    ==    ${title html}
 
 Verify Message Is Shown
-    [Documentation]    Verify a message is show based upon a locator and a specific message
+    [Documentation]    Verify a dynamic part of the message is shown based upon a locator and message
     [Arguments]    ${locator}    ${validation message}
-    Get Text    ${locator}    ==    ${validation message}
+    Get Text    ${locator}    *=    ${validation message}
 
 Retrieve And Set Authentication Token
     [Documentation]    Get authentication token via API and set it in local storage of the browser
